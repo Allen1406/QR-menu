@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Restaurant</h1>
+    <p id="table-number">Table: Loading...</p>
+  </header>
+  <main>
+    <div class="menu-item">
+      <h2>Margherita Pizza</h2>
+      <p>$10</p>
+      <label>Quantity: <input type="number" min="1" value="1" id="pizza-qty"></label>
+      <button onclick="addToCart('Margherita Pizza', 10, 'pizza-qty')">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+      <h2>Cheeseburger</h2>
+      <p>$8</p>
+      <label>Quantity: <input type="number" min="1" value="1" id="burger-qty"></label>
+      <button onclick="addToCart('Cheeseburger', 8, 'burger-qty')">Add to Cart</button>
+    </div>
+    <div class="menu-item">
+      <h2>Salad</h2>
+      <p>$7</p>
+      <label>Quantity: <input type="number" min="1" value="1" id="salad-qty"></label>
+      <button onclick="addToCart('Salad', 7, 'salad-qty')">Add to Cart</button>
+    </div>
+    <button onclick="placeOrder()">Place Order</button>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
